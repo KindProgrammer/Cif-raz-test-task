@@ -1,0 +1,19 @@
+body {
+    background-color: #E5E4E2;
+}
+
+.backet {
+    padding: 1rem;
+    background-color: white;
+}
+
+.books-list{
+    display: flex;
+}
+
+.card {
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
