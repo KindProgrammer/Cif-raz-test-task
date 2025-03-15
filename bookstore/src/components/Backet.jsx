@@ -1,16 +1,17 @@
-import { useState } from "react"
-import BacketItem from "./BacketItem.jsx";
+import { useSelector } from 'react-redux';
+import BasketItem from "./BasketItem.jsx";
 
 const Backet = () => {
-    const [backet, setBacket] = useState([]);
+    const basket = useSelector((state) => state.basket);
 
     let content;
 
-    if (backet.length === 0) {
+    if (Object.keys(basket).length === 0) {
         content = <p>Ваша корзина пуста</p>
     } else {
-        content = backet.map((item) => {
-            return <BacketItem title={item.title} />
+        const basketKeys = Object.keys(basket)
+        content = basketKeys.map((item) => {
+            return <BasketItem key={basket[item].id} title={basket[item].title} book={basket[item]} />
         })
     }
 

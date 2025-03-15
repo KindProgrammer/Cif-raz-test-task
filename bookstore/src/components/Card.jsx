@@ -6,7 +6,9 @@ const Card = (props) => {
             <div className="book-title">{props.title}</div>
             <div className="author">{props.author}</div>
             <div className="description">{props.description}</div>
-            <button className="btn" onClick={props.onAddToCart}>Добавить в корзину</button>
+            <button className="btn" onClick={ props.onAddToCart }>
+                Добавить в корзину
+            </button>
         </div>
     );
 }

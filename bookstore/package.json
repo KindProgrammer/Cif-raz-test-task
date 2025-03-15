@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "mock": "json-server mock/db.json",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -24,6 +25,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "json-server": "^1.0.0-beta.3",
     "vite": "^6.2.0"
   }
 }
