@@ -6,7 +6,7 @@
 
 ## Задачи по JavaScript
 
-Выполненые задания находятся в папке [javascript](https://github.com/KindProgrammer/Cif-raz-test-task/tree/master/javascript)
+Выполненные задания находятся в папке [javascript](https://github.com/KindProgrammer/Cif-raz-test-task/tree/master/javascript)
 
 ## Задачи по React
 
