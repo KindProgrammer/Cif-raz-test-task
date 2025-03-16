@@ -11,10 +11,9 @@ const CardsList = () => {
     const [isError, setError] = useState(false);
     const dispatch = useDispatch()
 
-
     useEffect(() => {
         async function fetchData() {
-            fetch('http://localhost:3000/posts')
+            fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(async (data) => {
                     setBooksList(await data.json());
                 })        
